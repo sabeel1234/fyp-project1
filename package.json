@@ -1,0 +1,26 @@
+{
+  "name": "mentor-ai",
+  "version": "1.0.0",
+  "description": "Mentor AI system to help users get better at anything",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "pnpm --parallel run dev",
+    "build": "tsc -b",
+    "build:force": "tsc -b --force",
+    "build:clean": "tsc -b --clean",
+    "build:watch": "tsc -b --watch",
+    "lint": "pnpm --recursive run lint",
+    "typecheck": "tsc -b --noEmit",
+    "test": "pnpm --recursive run test",
+    "clean": "tsc -b --clean && pnpm --recursive run clean"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.2",
+    "typescript": "^5.9.3"
+  },
+  "packageManager": "pnpm@10.34.5+sha512.a4ee05f2f73658255bd6a89859c065a45c28a57daefae2c893a168ee2b73168c37b91e83e57ea67654ad03f03031746430e8bce38e362e042605fb8abc80192e"
+}
